@@ -15,6 +15,8 @@ namespace WebApplication2.Models
 
         public String account_image { get; set; }
 
+        public String description { get; set; }
+
         public List<Imagenes> atached_image { get; set; }
 
         public List<Comentarios> comments { get; set; }
