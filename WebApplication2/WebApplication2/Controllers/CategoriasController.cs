@@ -11,21 +11,23 @@ namespace WebApplication2.Controllers
 {
     public class CategoriasController : ApiController
     {
+
+        
         // GET api/categorias
-        public List<Categorias> Get()
+        public HttpResponseMessage Get()
         {
             List<Categorias> categorias;
             categorias = Models.Database.getCategorias();
-            return categorias;
+            return Request.CreateResponse<List<Categorias>>(HttpStatusCode.OK, categorias); 
         }
 
         // GET api/categorias/5
-        public List<Categorias> Get(int id)
+        public HttpResponseMessage Get(int id)
         {
             List<Categorias> categorias;
             categorias = Models.Database.getCategorias(id);
-            return categorias;
-            
+            return Request.CreateResponse<List<Categorias>>(HttpStatusCode.OK, categorias);
+
         }
 
         // POST api/categorias
