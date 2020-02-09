@@ -17,9 +17,9 @@ namespace WebApplication2.Controllers
         }
 
         // GET api/serviciosdetalle/5
-        public List<ServiciosDetalle> Get(int id)
+        public ServiciosDetalle Get(int id)
         {
-            List<ServiciosDetalle> serviciosDetalle;
+            ServiciosDetalle serviciosDetalle;
             serviciosDetalle = Models.Database.getServiciosDetalle(id);
             return serviciosDetalle;
         }

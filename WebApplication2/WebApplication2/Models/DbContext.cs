@@ -194,7 +194,12 @@ namespace WebApplication2.Models
                             servicio.code = Convert.ToInt16(dataTable.Rows[i]["id_servicio"]);
                             servicio.name = dataTable.Rows[i]["nombre"].ToString();
                             servicio.addres = dataTable.Rows[i]["direccion"].ToString();
+
                             servicio.avatar_image = dataTable.Rows[i]["imagen"].ToString();
+
+
+                            servicio.avatar_image = dataTable.Rows[i]["imagen_avatar"].ToString();
+                                                        
 
                             i++;
                             serviciosList.Add(servicio);
@@ -222,13 +227,14 @@ namespace WebApplication2.Models
             return serviciosList;
         }
 
-        public static List<ServiciosDetalle> getServiciosDetalle(int id_servicio)
+        public static ServiciosDetalle getServiciosDetalle(int id_servicio)
         {
             DataTable dataTable = new DataTable();
             DataTable imagen_account = new DataTable();
             DataTable imagen_atached = new DataTable();
             DataTable comentarios = new DataTable();
-            List<ServiciosDetalle> serviciosDetalleList = new List<ServiciosDetalle>();
+            ServiciosDetalle servicioDetalle = new ServiciosDetalle();
+           // ServiciosDetalle serviciosDetalleList = new ServiciosDetalle();
             //A TRAVEZ DE LA CADENA DE CONEXION DEL WEBCONFIG Y LA OBTENEMOS  
             //CON EL CONFIGURATIONMANAGER 
             using (SqlConnection con = new SqlConnection(
@@ -253,7 +259,7 @@ namespace WebApplication2.Models
                         foreach (DataRow fila in dataTable.Rows)
                         {
 
-                            ServiciosDetalle servicioDetalle = new ServiciosDetalle();
+                            
 
                             servicioDetalle.code = Convert.ToInt16(dataTable.Rows[i]["id_servicio"]);
                             servicioDetalle.name = dataTable.Rows[i]["nombre"].ToString();
@@ -261,10 +267,18 @@ namespace WebApplication2.Models
                             servicioDetalle.avatar_image = dataTable.Rows[i]["imagen_avatar"].ToString();
                             servicioDetalle.account_image = dataTable.Rows[i]["imagen_account"].ToString();
 
+
                             SqlCommand command4 = new SqlCommand("sp_get_imagenes @p_id_servicio = @id", con);
                             command4.Parameters.Add("@id", SqlDbType.Int);
                             command4.Parameters["@id"].Value = id_servicio;
                             imagen_atached.Load(command4.ExecuteReader());
+
+                            servicioDetalle.description = dataTable.Rows[i]["descripcion"].ToString();                            
+                            SqlCommand command3 = new SqlCommand("sp_get_imagenes @p_id_servicio = @id", con);
+                            command3.Parameters.Add("@id", SqlDbType.Int);
+                            command3.Parameters["@id"].Value = id_servicio;
+                            imagen_atached.Load(command3.ExecuteReader());
+
                             int j = 0;
                             List<Imagenes> imagenes = new List<Imagenes>();
 
@@ -300,11 +314,11 @@ namespace WebApplication2.Models
                             servicioDetalle.comments = comentario;
 
                             i++;
-                            serviciosDetalleList.Add(servicioDetalle);
+                           // serviciosDetalleList.Add(servicioDetalle);
 
                         }
 
-                        return serviciosDetalleList;
+                         return servicioDetalle;
 
                     }
                     catch (Exception x)
@@ -322,7 +336,7 @@ namespace WebApplication2.Models
             }
             //REGRESAMOS LOS DATOS COMO DATOS EN MEMORIA                                     
 
-            return serviciosDetalleList;
+            return servicioDetalle;
         }
         public static LoginSalida getLogin(string email, string nombre, string telefono, string device_id)
         {

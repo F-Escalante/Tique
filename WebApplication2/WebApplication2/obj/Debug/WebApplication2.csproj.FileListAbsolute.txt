@@ -94,6 +94,7 @@ C:\Users\FEDERICO\Desktop\WebApplication2\WebApplication2\bin\Antlr3.Runtime.pdb
 C:\Users\FEDERICO\Desktop\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache
 C:\Users\FEDERICO\Desktop\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\FEDERICO\Desktop\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+<<<<<<< HEAD
 C:\Users\c.ruesca\Desktop\Personal\Facultad\Tique\WebApplication2\WebApplication2\bin\WebApplication2.dll.config
 C:\Users\c.ruesca\Desktop\Personal\Facultad\Tique\WebApplication2\WebApplication2\bin\WebApplication2.dll
 C:\Users\c.ruesca\Desktop\Personal\Facultad\Tique\WebApplication2\WebApplication2\bin\WebApplication2.pdb
@@ -131,3 +132,37 @@ C:\Users\c.ruesca\Desktop\Personal\Facultad\Tique\WebApplication2\WebApplication
 C:\Users\c.ruesca\Desktop\Personal\Facultad\Tique\WebApplication2\WebApplication2\bin\EntityFramework.SqlServer.dll
 C:\Users\c.ruesca\Desktop\Personal\Facultad\Tique\WebApplication2\WebApplication2\bin\EntityFramework.xml
 C:\Users\c.ruesca\Desktop\Personal\Facultad\Tique\WebApplication2\WebApplication2\bin\EntityFramework.SqlServer.xml
+=======
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\WebApplication2.dll.config
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\WebApplication2.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\Antlr3.Runtime.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\Newtonsoft.Json.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Net.Http.Formatting.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Helpers.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Http.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Http.WebHost.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Mvc.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Optimization.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Razor.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.WebPages.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.WebPages.Razor.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\WebGrease.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\Newtonsoft.Json.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Net.Http.Formatting.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Helpers.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Http.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Http.WebHost.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Mvc.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Optimization.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.Razor.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.WebPages.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\System.Web.WebPages.Razor.xml
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\bin\Antlr3.Runtime.pdb
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+C:\Users\FEDERICO\Desktop\Tique\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+>>>>>>> 83e1fa19725f6afbbe55894824f58efe6a1d61de
